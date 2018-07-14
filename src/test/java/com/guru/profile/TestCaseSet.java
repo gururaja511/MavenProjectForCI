@@ -2,6 +2,8 @@ package com.guru.profile;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
 public class TestCaseSet {
@@ -34,9 +36,11 @@ public class TestCaseSet {
 	  
 	  
   }
+  @Parameters("env")
   @BeforeMethod
-  public void beforeMethod() {
+  public void beforeMethod(@Optional String env) {
 	  System.out.println("test before method");
+	  System.out.println("--------- env starte is "+env+"--------");
   }
 
   @AfterMethod
