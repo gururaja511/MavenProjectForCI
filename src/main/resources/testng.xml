@@ -7,6 +7,7 @@
 	</listeners>
 
 	<parameter name="env" value="qa2"></parameter>
+	<parameter name="isReports" value="false"></parameter>
 	<test name="Simple Test">
 		<classes>
 			<class name="com.guru.profile.TestCaseSet">

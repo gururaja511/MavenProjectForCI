@@ -39,7 +39,8 @@
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
 					<environmentVariables>
-					<env>${env}</env>					
+					<env>${env}</env>
+					<isReports>${isReports}</isReports>					
 					</environmentVariables>	
 					<workingDirectory>target/</workingDirectory>		
 				</configuration>
