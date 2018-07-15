@@ -27,6 +27,7 @@
 					<target>${jdk.level}</target>
 				</configuration>
 			</plugin>
+					
 			<!-- Below plug-in is used to execute tests -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -37,6 +38,10 @@
 						<!-- TestNG suite XML files -->
 						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
 					</suiteXmlFiles>
+					<environmentVariables>
+					<env>${env}</env>					
+					</environmentVariables>	
+					<workingDirectory>target/</workingDirectory>		
 				</configuration>
 			</plugin>
 		</plugins>
