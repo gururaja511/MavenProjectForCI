@@ -1,9 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run">
 
-    <listeners>
-        <listener class-name="com.guru.util.listeners.EnvReaderListener"/>
-    </listeners>
+	<listeners>
+		<listener
+			class-name="com.guru.util.listeners.EnvReaderListener" />
+	</listeners>
 
 	<parameter name="env" value="qa2"></parameter>
 	<test name="Simple Test">
